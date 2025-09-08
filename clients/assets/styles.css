@@ -1,0 +1,124 @@
+
+:root {
+  --accent: #2c7be5;
+  --muted: #666;
+  --card-bg: #fff;
+  --page-bg: #f6f8fb;
+  --radius: 10px;
+}
+
+* { 
+  box-sizing: border-box; 
+  font-family: Arial, sans-serif; 
+}
+body {
+   margin: 0; background: 
+   var(--page-bg); color: #222; 
+  }
+header { 
+  background: white; 
+  border-bottom: 1px solid #e6e9ef; 
+  padding: 14px 24px; 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; }
+.brand { 
+  font-weight:700; 
+  color:var(--accent); 
+  text-decoration:none;
+ }
+
+nav a { 
+  margin-left:12px; 
+  text-decoration:none; 
+  color:#333; 
+}
+
+.container { 
+  max-width:1100px; 
+  margin:24px auto; 
+  padding:0 16px; 
+}
+
+.event-grid { 
+  display:grid; 
+  grid-template-columns: 
+  repeat(auto-fill, minmax(260px, 1fr)); 
+  gap:18px;
+ }
+.card { 
+  background:var(--card-bg); 
+  border-radius:var(--radius); 
+  padding:12px; 
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+ }
+.card img { 
+  width:100%; 
+  height:140px; 
+  object-fit:cover;
+   border-radius:8px;
+ }
+.meta { 
+  font-size:0.9rem; 
+  color:var(--muted); 
+  margin-top:8px;
+ }
+.badge { 
+  display:inline-block; 
+  padding:4px 8px; 
+  border-radius:999px; 
+  background:#eef6ff;
+   color:var(--accent); 
+   font-weight:600; 
+   font-size:0.8rem; 
+  }
+.progress { 
+  width:100%; 
+  background:#eee; 
+  height:12px;
+   border-radius:6px; 
+   overflow:hidden; 
+  }
+.progress > i { 
+  display:block; 
+  height:100%; background: 
+  linear-gradient(90deg,#2c7be5,#7cc1ff); 
+  width:0%; }
+
+.search-form { 
+  display:flex; gap:8px; 
+  flex-wrap:wrap; 
+  margin-bottom:16px; }
+.search-form input, .search-form select { 
+  padding:8px; 
+  border-radius:6px; 
+  border:1px solid #ddd; 
+  min-width:160px; 
+}
+
+.btn {
+   background:var(--accent); 
+   color:white; 
+   padding:2px 8px; 
+   border-radius:8px; 
+   border:none; 
+   cursor:pointer; }
+.btn.secondary { background:#6c757d; }
+
+.badge.past {
+  background: #e74c3c;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+
+.footer { 
+  text-align:center; 
+  color:var(--muted); 
+  margin:24px 0; 
+}
+

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Search Events</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">CityCharity</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search Events</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Search Charity Events</h2>
+      <form id="searchForm" class="search-form">
+        <input type="date" id="dateInput" name="date" />
+        <input type="text" id="locationInput" name="location" placeholder="Location " />
+        <select id="categorySelect" name="category">
+          <option value="">All categories</option>
+        </select>
+        <button type="submit" class="btn">Search</button>
+        <button type="button" id="clearBtn" class="btn secondary">Clear Filters</button>
+      </form>
+
+      <div id="searchErrors" style="color:red;"></div>
+      <div id="results" class="event-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">© CityCharity</footer>
+  <script src="scripts/search.js"></script>
+</body>
+</html>
